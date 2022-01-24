@@ -1,0 +1,43 @@
+# 配置多api_keys
+api_keys:
+  - 'xxxxxxxxxxxx'
+  - 'xxxxxxxxxxxx'
+
+#调试模式，开启将会记录日志到本地
+debug: true
+
+#重试次数
+retry_count: 3
+
+#是否覆盖源文件
+override_input_file: false
+
+#源文件大小少于此数值自动跳过，单位byte
+skip_size: 0
+
+#是否遍历子目录，会自动跳过[output_folder_name]下的文件
+walk_sub_dir: true
+
+#输出文件夹名
+#当override_input_file为False时才生效。会在源文件目录创建[output_folder_name]文件夹
+output_folder_name: "output"
+
+# 配置多路径
+# 如在Windows环境下使用，记得把路径的"\"改为"/"或者"\\"
+# 支持相对路径和绝对路径
+file_dirs:
+  - "/Users/charming/Desktop/图片压缩测试/1"
+  - "/Users/charming/Desktop/图片压缩测试/2"
+
+# 配置例外文件名，不对此列表的图片压缩
+# 如在Windows环境下使用，记得把路径的"\"改为"/"或者"\\"
+exclude_files:
+  - "/Users/charming/Desktop/图片压缩测试/2/av_bg_untion_rank_success_promote.png"
+
+#配置例外的目录名，不对此文件夹和它的子目录进行压缩
+#注意是文件夹名，不是路径
+exclude_dirs_name:
+	- ".git"
+  - "build"
+  - ".gradle"
+  - ".idea"
