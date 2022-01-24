@@ -84,11 +84,11 @@ exclude_dirs_name:
 ### 支持参数
 
 
-|  参数  | 参数类型 | 摘要                          | 示例                                                                                       |
-|:----:|------|-----------------------------|------------------------------------------------------------------------------------------|
-|  无参  |      | 压缩`config/config.yaml`配置的路径 | `tinycharm.py`                                                                           |
-| `－f` | 图像文件 | 压缩指定的单个文件                   | `tinycharm.py -f /Users/charming/Desktop/图片压缩测试/2/av_bg_untion_rank_success_promote.png` |
-| `－d` | 文件夹  | 压缩指定文件夹下所有图片文件              | `tinycharm.py -d /Users/charming/Desktop/图片压缩测试/1`                                       |
-| `-w` | 整型数字 | 压缩后图片的宽度，不指定则宽度不变           | `tinycharm.py -w 300`                                                                    |
+| 参数  | 参数类型 | 摘要                               | 示例                                                         |
+| :---: | -------- | ---------------------------------- | ------------------------------------------------------------ |
+| 无参  |          | 压缩`config/config.yaml`配置的路径 | `tinycharm.py`                                               |
+| `－f` | 图像文件 | 压缩指定的单个文件                 | `tinycharm.py -f /Users/charming/Desktop/图片压缩测试/2/av_bg_untion_rank_success_promote.png` |
+| `－d` | 文件夹   | 压缩指定文件夹下所有图片文件       | `tinycharm.py -d /Users/charming/Desktop/图片压缩测试/1`     |
+| `-w`  | 整型数字 | 压缩后图片的宽度，不指定则宽度不变 | `tinycharm.py -w 300`                                        |
 
 
