@@ -74,7 +74,7 @@ exclude_files:
 #配置例外的目录名，不对此文件夹和它的子目录进行压缩
 #注意是文件夹名，不是路径
 exclude_dirs_name:
-	- ".git"
+  - ".git"
   - "build"
   - ".gradle"
   - ".idea"
