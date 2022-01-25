@@ -8,7 +8,7 @@ import tinify
 from TinyCharm import csv_utils, file_utils, yaml_util
 from TinyCharm.log_utils import Logger
 
-version = "1.0.1"  # 版本
+version = "1.0.0"  # 版本
 
 # 单个图片已经重试的次数
 already_retry_count = 0
