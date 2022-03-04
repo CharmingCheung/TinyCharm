@@ -61,7 +61,7 @@ def compress_core(input_file, output_file, img_width):
                     file_md5 = file_utils.get_file_md5(output_file)
                     output_file_size = file_utils.get_file_size(output_file)
                     compress_ratio = file_utils.get_compression(input_file_size, output_file_size)
-                    csv_utils.add_to_csv(file_md5, output_file, compress_ratio)
+                    csv_utils.add_to_csv(inputMd5, output_file, compress_ratio)
                     logger.success("完成：%s，原来MD5=%s，现在MD5=%s，压缩百分比=%s" % (
                         output_file, inputMd5, file_md5, compress_ratio))
 
