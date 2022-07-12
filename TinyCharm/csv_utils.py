@@ -18,10 +18,11 @@ def add_to_csv(md5str, file_path, compress_ratio):
         needHeader = True
     finally:
         time_string = time_util.get_time_string()
-        df = pd.DataFrame(columns=['md5', 'file_path', 'compress_ratio', 'date_time'])
-        df = df.append(
-            {'md5': md5str, 'file_path': file_path, 'compress_ratio': compress_ratio, 'date_time': time_string},
-            ignore_index=True)
+        columns_config = ['md5', 'file_path', 'compress_ratio', 'date_time']
+        df_temp = pd.DataFrame([[md5str, file_path, compress_ratio, time_string]],
+                               columns=columns_config)
+        df = pd.DataFrame(columns=columns_config)
+        df = pd.concat([df, df_temp], ignore_index=True)
         df.to_csv(get_csv_location(), mode='a', header=needHeader, index=False)
 
 
